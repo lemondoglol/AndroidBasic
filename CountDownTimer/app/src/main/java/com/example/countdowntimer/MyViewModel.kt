@@ -19,11 +19,10 @@ class MyViewModel : ViewModel() {
     }
 
     private val _currentTime = MutableLiveData<Long>()
-//    val currentTime: LiveData<Long>
-//        get() = _currentTime
-    val currentTimeStr: LiveData<String> = Transformations.map(_currentTime) {
-        // format to "MM:SS"
-        DateUtils.formatElapsedTime(it)
+    val currentTimeStr: LiveData<String> = Transformations.switchMap(_currentTime) {
+        val result = MutableLiveData<String>()
+        result.value = "current Time is " + DateUtils.formatElapsedTime(it)
+        result
     }
 
     private val timer = object : CountDownTimer(COUNTDOWN_TIME, ONE_SECOND) {
