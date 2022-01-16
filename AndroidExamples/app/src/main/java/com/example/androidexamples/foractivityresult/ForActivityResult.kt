@@ -31,8 +31,11 @@ class ForActivityResult : AppCompatActivity() {
 
         findViewById<Button>(R.id.goTo_button).setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("Number1", number1TextView.text.toString())
-            intent.putExtra("Number2", number2TextView.text.toString())
+            val bundle = Bundle().apply {
+                this.putString("Number1", number1TextView.text.toString())
+                this.putString("Number2", number2TextView.text.toString())
+            }
+            intent.putExtra("data", bundle)
             startForResult.launch(intent)
         }
     }

@@ -13,8 +13,9 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         findViewById<Button>(R.id.calculate_button).setOnClickListener {
-            val number1 = intent?.getStringExtra("Number1")?.toInt() ?: 0
-            val number2 = intent?.getStringExtra("Number2")?.toInt() ?: 0
+            val bundle = intent?.extras?.getBundle("data")
+            val number1 = bundle?.getString("Number1")?.toInt() ?: 0
+            val number2 = bundle?.getString("Number2")?.toInt() ?: 0
             val answer = number1 + number2
             val resultIntent = Intent()
             resultIntent.putExtra("Answer", answer)

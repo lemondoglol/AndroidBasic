@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/activity_result_button"
+        android:id="@+id/start_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:text="For Activity Result"
+        android:text="Start Timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,9 +22,9 @@
         android:id="@+id/timer_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_result_button" />
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        tools:layout_editor_absoluteX="177dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
