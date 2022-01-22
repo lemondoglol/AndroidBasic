@@ -18,8 +18,8 @@ class ForActivityResult : AppCompatActivity() {
 
     private val startForResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (it.resultCode == Activity.RESULT_OK) {
-            val intent = it.data
-            val strData = intent?.extras?.get("Answer").toString()
+            val bundle = it.data?.extras
+            val strData = bundle?.get("Answer").toString()
             answerTextView.text = "Answer is: " + strData
         }
     }

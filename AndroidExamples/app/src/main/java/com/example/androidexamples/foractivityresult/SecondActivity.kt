@@ -16,9 +16,13 @@ class SecondActivity : AppCompatActivity() {
             val bundle = intent?.extras?.getBundle("data")
             val number1 = bundle?.getString("Number1")?.toInt() ?: 0
             val number2 = bundle?.getString("Number2")?.toInt() ?: 0
-            val answer = number1 + number2
-            val resultIntent = Intent()
-            resultIntent.putExtra("Answer", answer)
+            val returnBundle = Bundle().apply {
+                putInt("Answer", number1 + number2)
+            }
+            val resultIntent = Intent().apply {
+                putExtras(returnBundle)
+            }
+
             setResult(Activity.RESULT_OK, resultIntent)
             finish()
         }

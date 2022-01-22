@@ -2,11 +2,11 @@ package com.example.recyclerviewexample
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 
-class RecyclerViewAdapter : RecyclerView.Adapter<ItemViewHolder>() {
-
-    var dataList = listOf<Int>()
+class RecyclerViewAdapter(private val clickListener: MyItemClickListener)
+    : ListAdapter<MyItem, ItemViewHolder>(MyItemDiffCallBack()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -15,12 +15,23 @@ class RecyclerViewAdapter : RecyclerView.Adapter<ItemViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = dataList[position]
-        holder.itemTextView.text = "Current Item Number: $item"
-        holder.itemDescriptionTextView.text = "Description: $item"
+        val item = getItem(position)
+        holder.itemTextView.text = "Current Item Number: ${item.id}"
+        holder.itemTextView.setOnClickListener {
+            clickListener.onClick(item)
+        }
+        holder.itemDescriptionTextView.text = "Description: ${item.description}"
     }
 
-    override fun getItemCount(): Int {
-        return dataList.size
+}
+
+class MyItemDiffCallBack : DiffUtil.ItemCallback<MyItem>() {
+    override fun areItemsTheSame(oldItem: MyItem, newItem: MyItem): Boolean {
+        return oldItem.id == newItem.id
     }
+
+    override fun areContentsTheSame(oldItem: MyItem, newItem: MyItem): Boolean {
+        return oldItem == newItem
+    }
+
 }
