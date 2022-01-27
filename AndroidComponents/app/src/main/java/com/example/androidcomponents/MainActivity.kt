@@ -2,15 +2,9 @@ package com.example.androidcomponents
 
 import android.app.DatePickerDialog
 import android.content.Intent
-import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.WebResourceRequest
-import android.webkit.WebView
-import android.webkit.WebViewClient
 import android.widget.Button
-import android.widget.DatePicker
-import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AlertDialog
@@ -71,4 +65,8 @@ class MainActivity : AppCompatActivity() {
         }.show()
     }
 
+    /**
+     * Swipe Menu ListView
+     * https://github.com/baoyongzhang/SwipeMenuListView
+     * */
 }
