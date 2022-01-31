@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment() {
+
+    // setup viewModel
+    private val myViewModel: MyViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,8 +28,14 @@ class HomeFragment : Fragment() {
 
         // navigate to Detail Fragment
         view.findViewById<Button>(R.id.home_button).setOnClickListener {
+            myViewModel.increaseCount()
             findNavController().navigate(R.id.action_homeFragment_to_detailFragment)
         }
+
+        // observe live data
+        myViewModel.currentCount.observe(viewLifecycleOwner, {
+            view.findViewById<TextView>(R.id.home_textView).text = it.toString()
+        })
 
     }
 }
