@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ForegroundServices</string>
+    <string name="channel_name">my channel</string>
+    <string name="channel_description">my channel description</string>
+</resources>
