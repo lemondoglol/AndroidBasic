@@ -1,5 +1,11 @@
 package com.example.recyclerviewexample
 
-class MyItemClickListener(val clickListener: (myItem: MyItem) -> Unit) {
-    fun onClick(myItem: MyItem) = clickListener(myItem)
+/**
+ * define multiple action listeners contract
+ * - will be implemented in Activity/Fragment
+ * */
+interface MyItemClickListener {
+    fun onItemClicked(myItem: MyItem)
+
+    fun onItemTouch(myItem: MyItem)
 }

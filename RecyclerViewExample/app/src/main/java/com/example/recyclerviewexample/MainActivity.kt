@@ -20,15 +20,32 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..8) dataList.add(MyItem(i, "description $i"))
 
         // define listener actions
-        val myClickListener = MyItemClickListener {
-            Toast.makeText(this, "ID: ${it.id} clicked", Toast.LENGTH_LONG).show()
+        val myClickListeners = object : MyItemClickListener {
+            override fun onItemClicked(myItem: MyItem) {
+                Toast.makeText(
+                    this@MainActivity, "{${myItem.id}} clicked", Toast.LENGTH_SHORT
+                ).show()
+            }
+
+            override fun onItemTouch(myItem: MyItem) {
+                Toast.makeText(
+                    this@MainActivity, "{${myItem.id}} pressed", Toast.LENGTH_SHORT
+                ).show()
+            }
+
         }
-        val manager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
-        val adapter = RecyclerViewAdapter(myClickListener)
+
+        // grid layout
+        val manager = GridLayoutManager(
+            this, 2, GridLayoutManager.VERTICAL, false
+        )
+        val adapter = RecyclerViewAdapter(myClickListeners)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = manager
 
-        // bind ItemTouchHelper to RecyclerView
+        /**
+         * bind simple ItemTouchHelper to RecyclerView, swipe left or right to remove item
+         */
         ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
             0,
             ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT

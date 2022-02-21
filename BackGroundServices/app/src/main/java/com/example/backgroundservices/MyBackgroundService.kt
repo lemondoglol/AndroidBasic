@@ -17,7 +17,7 @@ class MyBackgroundService : LifecycleService() {
 
     // will be called when startService(intent) is called
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        // make sure run this in non-main scope
+        // make sure run this in another scope inside Main
 //        lifecycleScope.launch {
 //            while (true) {
 //                delay(1000)
