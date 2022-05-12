@@ -3,7 +3,6 @@ package com.example.dagger2_example
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.dagger2_example.models.User
-import com.example.dagger2_example.network.CustomerServiceRepository
 import com.example.dagger2_example.network.CustomerServiceRepositoryImpl
 import io.reactivex.Observer
 import io.reactivex.schedulers.Schedulers

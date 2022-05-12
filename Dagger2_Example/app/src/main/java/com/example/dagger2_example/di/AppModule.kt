@@ -1,6 +1,5 @@
 package com.example.dagger2_example.di
 
-import com.example.dagger2_example.network.CustomerServiceClient
 import com.example.dagger2_example.network.CustomerServiceClient.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -17,9 +16,6 @@ interface AppModule {
 
     companion object {
 
-        /**
-         * TODO: update this, think if we could make this inside DataSource Module
-         * */
         @Singleton
         @Provides
         fun provideRetrofitInstance(): Retrofit {
@@ -29,7 +25,5 @@ interface AppModule {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
-
     }
-
 }

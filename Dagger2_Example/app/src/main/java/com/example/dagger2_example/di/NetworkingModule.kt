@@ -14,6 +14,8 @@ class NetworkingModule {
 
     @Singleton
     @Provides
-    fun provideCustomerServiceClient(retrofit: Retrofit) = retrofit.create(CustomerServiceClient::class.java)
+    fun provideCustomerServiceClient(
+        retrofit: Retrofit
+    ) = retrofit.create(CustomerServiceClient::class.java)
 
 }

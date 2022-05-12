@@ -2,11 +2,7 @@ package com.example.dagger2_example.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.dagger2_example.MainActivityViewModel
-import dagger.Binds
 import dagger.MapKey
-import dagger.Module
-import dagger.multibindings.IntoMap
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton

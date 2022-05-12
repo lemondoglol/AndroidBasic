@@ -11,5 +11,4 @@ class BaseApplication : DaggerApplication() {
          * */
         return DaggerAppComponent.builder().application(this).build()
     }
-
 }
