@@ -2,6 +2,7 @@ package com.example.coroutineexamples
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         sequentialButton.setOnClickListener { sequentialCall() }
         startCancellableButton.setOnClickListener { startCancellableJob() }
         stopCancellableButton.setOnClickListener { cancelJob() }
+
+//        receiveDownloaded()
+        waitingForResultExample()
     }
 
     // Simple API Call
@@ -46,13 +50,17 @@ class MainActivity : AppCompatActivity() {
     // withTimeoutOrNull
     private fun makeAPICallWithTimeOut() {
         CoroutineScope(Dispatchers.IO).launch {
+            /**
+             * withTimeoutOrNull(...) will return null if timeout
+             * it will create a suspending block, so you can define your other code inside
+             * */
             val job = withTimeoutOrNull(TIMEOUT_LIMIT) {
+                // response2 will run after response1 done; code inside will run sync
                 val response1 = apiCallProcess1()
                 updateTextView(response1)
 
                 val response2 = apiCallProcess1()
                 updateTextView(response2)
-                // response2 will run after response1 done
             }
 
             if (job == null) {
@@ -72,8 +80,10 @@ class MainActivity : AppCompatActivity() {
                     apiCallProcess2()
                 }
 
-                // job1 and job2 async run without blocking
-                // but job1 will still be update before job2
+                /**
+                 * job1 and job2 async run without blocking
+                 * but job1 will still be update before job2
+                 * */
                 updateTextView(job1.await())
                 updateTextView(job2.await())
             }
@@ -81,7 +91,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // make sequential call
+    /**
+     *  make sequential call
+     *  but we could make it regular call without using async
+     */
     private fun sequentialCall() {
         CoroutineScope(Dispatchers.IO).launch { // parent job
             val executionTime = measureTimeMillis {
@@ -107,6 +120,7 @@ class MainActivity : AppCompatActivity() {
         // init cancellable job
         cancellableJob = Job()
         cancellableJob.invokeOnCompletion {
+            // called when the job is cancelled
             it?.message.let {
                 CoroutineScope(Dispatchers.Main).launch {
                     updateTextView(it ?: "Job Got Cancelled")
@@ -178,5 +192,75 @@ class MainActivity : AppCompatActivity() {
         sequentialButton = findViewById(R.id.seq_button)
         startCancellableButton = findViewById(R.id.startCancelJob_button)
         stopCancellableButton = findViewById(R.id.cancel_job_button)
+    }
+
+    /**
+     * Crossinline example
+     * */
+    inline fun foo( f: () -> Unit) {
+        f()
+    }
+
+    fun callingFun() {
+        foo {
+            println("Hello World")
+            return
+        }
+    }
+
+    /**
+     * Init all jobs and then collect all
+     * */
+    private fun receiveDownloaded() {
+        Log.d("Tuna", "before") // 3
+        CoroutineScope(Dispatchers.Main).launch {
+            Log.d("Tuna", "downloading inside") // 5
+            downloadingJobs.joinAll()
+            Log.d("Tuna", "downloading done") //6
+        }
+        Log.d("Tuna", "after") // 4
+    }
+
+    private val downloadingJobs = listOf(
+        CoroutineScope(Dispatchers.IO).launch {
+            downloadBooks() // 1
+        },
+        CoroutineScope(Dispatchers.IO).launch {
+            downloadSongs()  // 2
+        }
+    )
+
+    private suspend fun downloadBooks() {
+        Log.d("Tuna", "downloading books")
+        delay(3500L)
+        Log.d("Tuna", "books downloaded")
+    }
+
+    private suspend fun downloadSongs() {
+        Log.d("Tuna", "downloading songs")
+        delay(1500L)
+        Log.d("Tuna", "songs downloaded")
+    }
+
+    /**
+     *  Start a job, and use in another place, wait for it
+     */
+    private fun waitingForResultExample() {
+        CoroutineScope(Dispatchers.Main).launch {
+            Log.d("Tuna1", "before customerId $customerId") // 1
+            getCustomer().join()
+            // all code below will have customerId = 25
+            Log.d("Tuna1", "after customerId $customerId") // 4
+        }
+    }
+
+    private var customerId = 0
+
+    // this will start immediately
+    private fun getCustomer() = CoroutineScope(Dispatchers.IO).launch {
+        Log.d("Tuna1", "start getting customer") // 2
+        delay(2500L)
+        customerId = 25
+        Log.d("Tuna1", "customer got it") // 3
     }
 }

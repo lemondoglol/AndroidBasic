@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/tipperFragment">
+
+    <fragment
+        android:id="@+id/tipperFragment"
+        android:name="com.example.wikibox.tipper.TipperFragment"
+        android:label="TipperFragment" >
+        <action
+            android:id="@+id/action_tipperFragment_to_testingFragment"
+            app:destination="@id/testingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="com.example.wikibox.TestingFragment"
+        android:label="TestingFragment" />
+</navigation>
