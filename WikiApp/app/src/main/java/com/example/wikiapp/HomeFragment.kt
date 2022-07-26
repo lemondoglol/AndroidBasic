@@ -53,6 +53,12 @@ class HomeFragment : Fragment() {
             }) {
                 Text(text = stringResource(R.string.clinician_close_time_picker))
             }
+
+            Button(onClick = {
+                findNavController().navigate(R.id.colorConverterFragment)
+            }) {
+                Text(text = stringResource(R.string.color_converter))
+            }
         }
     }
 }

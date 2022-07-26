@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_homeFragment_to_clinicianSaverFragment"
             app:destination="@id/clinicianSaverFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_colorConverterFragment"
+            app:destination="@id/colorConverterFragment" />
     </fragment>
     <fragment
         android:id="@+id/tipperFragment"
@@ -30,5 +33,9 @@
         android:id="@+id/clinicianSaverFragment"
         android:name="com.example.wikiapp.clinician_saver.ClinicianSaverFragment"
         android:label="ClinicianSaverFragment" />
+    <fragment
+        android:id="@+id/colorConverterFragment"
+        android:name="com.example.wikiapp.color_converter.ColorConverterFragment"
+        android:label="ColorConverterFragment" />
 
 </navigation>
