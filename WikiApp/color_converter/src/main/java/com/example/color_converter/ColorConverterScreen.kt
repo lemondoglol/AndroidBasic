@@ -122,8 +122,9 @@ fun EditableExposedDropdownMenuSample(
             expanded = !expanded
         }
     ) {
-        TextField(
+        OutlinedTextField(
             value = selectedOptionText,
+            readOnly = true,
             onValueChange = { onValueChanged(it) },
             label = { Text(stringResource(R.string.opacity)) },
             trailingIcon = {
