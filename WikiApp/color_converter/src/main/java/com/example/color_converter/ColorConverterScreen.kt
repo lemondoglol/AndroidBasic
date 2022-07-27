@@ -37,6 +37,7 @@ fun ColorConverterScreen(
                 .padding(16.dp),
             onValueChanged = handler::onOpacityValueChange,
             selectedOptionText = handler.opacityValue.toString(),
+            optionList = (0..20).map { (it * 5).toString() }
         )
         Text(text = handler.convertRGBToHex())
     }
@@ -111,46 +112,48 @@ private fun ColorPickSection(
 fun EditableExposedDropdownMenuSample(
     modifier: Modifier = Modifier,
     selectedOptionText: String,
-    onValueChanged: (String?) -> Unit,
+    onValueChanged: (String) -> Unit,
+    optionList: List<String>,
 ) {
-    val keyboardController = LocalSoftwareKeyboardController.current
-    var expanded by remember { mutableStateOf(false) }
-    ExposedDropdownMenuBox(
-        modifier = Modifier.clickable { expanded = true },
-        expanded = expanded,
-        onExpandedChange = {
-            expanded = !expanded
-        }
+    Column(
+        modifier = modifier,
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        OutlinedTextField(
-            value = selectedOptionText,
-            readOnly = true,
-            onValueChange = { onValueChanged(it) },
-            label = { Text(stringResource(R.string.opacity)) },
-            trailingIcon = {
-                ExposedDropdownMenuDefaults.TrailingIcon(
-                    expanded = expanded
-                )
-            },
-            colors = ExposedDropdownMenuDefaults.textFieldColors()
-        )
-
-        val optionList = (0..20).map { (it * 5).toString() }
-        ExposedDropdownMenu(
+        var expanded by remember { mutableStateOf(false) }
+        ExposedDropdownMenuBox(
+            modifier = Modifier.clickable { expanded = true },
             expanded = expanded,
-            onDismissRequest = {
-                expanded = false
-            }
+            onExpandedChange = { expanded = !expanded }
         ) {
-            optionList.forEach { selectionOption ->
-                DropdownMenuItem(
-                    onClick = {
-                        onValueChanged(selectionOption)
-                        expanded = false
-                        keyboardController?.hide()
+            OutlinedTextField(
+                value = selectedOptionText,
+                readOnly = true,
+                onValueChange = { onValueChanged(it) },
+                label = { Text(stringResource(R.string.opacity)) },
+                trailingIcon = {
+                    ExposedDropdownMenuDefaults.TrailingIcon(
+                        expanded = expanded
+                    )
+                },
+                colors = ExposedDropdownMenuDefaults.textFieldColors()
+            )
+
+            ExposedDropdownMenu(
+                expanded = expanded,
+                onDismissRequest = {
+                    expanded = false
+                }
+            ) {
+                optionList.forEach { selectionOption ->
+                    DropdownMenuItem(
+                        onClick = {
+                            onValueChanged(selectionOption)
+                            expanded = false
+                        }
+                    ) {
+                        Text(text = selectionOption)
                     }
-                ) {
-                    Text(text = selectionOption)
                 }
             }
         }
