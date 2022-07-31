@@ -21,7 +21,8 @@
             android:id="@+id/action_homeFragment_to_colorConverterFragment"
             app:destination="@id/colorConverterFragment" />
         <argument android:name="userName"
-            android:defaultValue="name"/>
+            app:argType="string"
+            app:nullable="true"/>
         <!--note this is very important, was using www.lemon, but this by default will be consumed by Google, so make it unique-->
         <deepLink app:uri="lemon/{userName}" />
     </fragment>

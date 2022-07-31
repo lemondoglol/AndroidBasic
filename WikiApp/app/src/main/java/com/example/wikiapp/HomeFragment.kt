@@ -32,8 +32,9 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val name = arguments?.getString(getString(R.string.user_name)) ?: "Ryan Chen"
-        Toast.makeText(context, "hello $name", Toast.LENGTH_SHORT).show()
+        arguments?.getString(getString(R.string.user_name))?.let {
+            Toast.makeText(context, "hello $it", Toast.LENGTH_SHORT).show()
+        }
 
         return ComposeView(requireContext()).apply {
             setContent {
