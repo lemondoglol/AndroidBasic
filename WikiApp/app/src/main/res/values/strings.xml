@@ -3,4 +3,5 @@
     <string name="tip_calculator">Tip Calculator</string>
     <string name="clinician_close_time_picker">Clinician Close Time Picker</string>
     <string name="color_converter">Color Converter</string>
+    <string name="user_name">userName</string>
 </resources>

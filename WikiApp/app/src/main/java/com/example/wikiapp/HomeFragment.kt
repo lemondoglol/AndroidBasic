@@ -4,16 +4,22 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import android.widget.Toast
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
@@ -26,9 +32,16 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val name = arguments?.getString(getString(R.string.user_name)) ?: "Ryan Chen"
+        Toast.makeText(context, "hello $name", Toast.LENGTH_SHORT).show()
+
         return ComposeView(requireContext()).apply {
             setContent {
-                ContentScreen(modifier = Modifier.fillMaxSize().padding(8.dp))
+                ContentScreen(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(8.dp)
+                )
             }
         }
     }
@@ -42,6 +55,8 @@ class HomeFragment : Fragment() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
+            Testing()
+
             Button(onClick = {
                 findNavController().navigate(R.id.tipperFragment)
             }) {
@@ -60,5 +75,19 @@ class HomeFragment : Fragment() {
                 Text(text = stringResource(R.string.color_converter))
             }
         }
+    }
+
+    @Composable
+    fun Testing(
+        modifier: Modifier = Modifier
+    ) {
+        Image(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(size = 25.dp))
+                .border(width = 10.dp, color = Color.Cyan, shape = RoundedCornerShape(25.dp)),
+            painter = painterResource(id = R.drawable.hunter),
+            contentDescription = "image contentDescription",
+        )
     }
 }

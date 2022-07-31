@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.wikiapp.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="HomeFragment">
         <action
             android:id="@+id/action_homeFragment_to_tipperFragment"
             app:destination="@id/tipperFragment" />
@@ -20,6 +20,10 @@
         <action
             android:id="@+id/action_homeFragment_to_colorConverterFragment"
             app:destination="@id/colorConverterFragment" />
+        <argument android:name="userName"
+            android:defaultValue="name"/>
+        <!--note this is very important, was using www.lemon, but this by default will be consumed by Google, so make it unique-->
+        <deepLink app:uri="lemon/{userName}" />
     </fragment>
     <fragment
         android:id="@+id/tipperFragment"
@@ -36,6 +40,7 @@
     <fragment
         android:id="@+id/colorConverterFragment"
         android:name="com.example.wikiapp.color_converter.ColorConverterFragment"
-        android:label="ColorConverterFragment" />
+        android:label="ColorConverterFragment">
+    </fragment>
 
 </navigation>
