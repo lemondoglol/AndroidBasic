@@ -47,6 +47,7 @@ class HomeFragment : Fragment() {
         }
     }
 
+
     @Composable
     private fun ContentScreen(
         modifier: Modifier = Modifier
