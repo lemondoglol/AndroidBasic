@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.wikiapp.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_tipperFragment"
+            app:destination="@id/tipperFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_AASplitFragment"
+            app:destination="@id/AASplitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_clinicianSaverFragment"
+            app:destination="@id/clinicianSaverFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_colorConverterFragment"
+            app:destination="@id/colorConverterFragment" />
+        <argument android:name="userName"
+            app:argType="string"
+            app:nullable="true"/>
+        <!--note this is very important, was using www.lemon, but this by default will be consumed by Google, so make it unique-->
+        <deepLink app:uri="lemon/{userName}" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipperFragment"
+        android:name="com.example.wikiapp.tipcalculator.TipperFragment"
+        android:label="TipperFragment" >
+        <argument android:name="tipPercentage"
+            app:argType="integer"
+            android:defaultValue="15"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/AASplitFragment"
+        android:name="com.example.wikiapp.aasplit.AASplitFragment"
+        android:label="AASplitFragment" />
+    <fragment
+        android:id="@+id/clinicianSaverFragment"
+        android:name="com.example.wikiapp.clinician_saver.ClinicianSaverFragment"
+        android:label="ClinicianSaverFragment" />
+    <fragment
+        android:id="@+id/colorConverterFragment"
+        android:name="com.example.wikiapp.color_converter.ColorConverterFragment"
+        android:label="ColorConverterFragment">
+    </fragment>
+
+</navigation>

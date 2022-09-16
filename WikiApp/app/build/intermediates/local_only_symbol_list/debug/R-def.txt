@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable hunter
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id AASplitFragment
+id action_homeFragment_to_AASplitFragment
+id action_homeFragment_to_clinicianSaverFragment
+id action_homeFragment_to_colorConverterFragment
+id action_homeFragment_to_tipperFragment
+id clinicianSaverFragment
+id colorConverterFragment
+id homeFragment
+id home_nav_graph
+id main_nav_host_fragment
+id tipperFragment
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation home_nav_graph
+string app_name
+string clinician_close_time_picker
+string color_converter
+string tip_calculator
+string user_name
+style Theme.WikiApp

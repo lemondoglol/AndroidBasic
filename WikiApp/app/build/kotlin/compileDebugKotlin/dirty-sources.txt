@@ -1,0 +1,15 @@
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/color_converter/ColorConverterFragmentViewModel.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/MyApplication.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragmentViewModel.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/aasplit/AASplitFragmentViewModel.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/tipcalculator/TipperFragmentViewModel.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/MainActivity.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/build/generated/source/navigation-args/debug/com/example/wikiapp/HomeFragmentDirections.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/HomeFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/tipcalculator/TipperFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/aasplit/AASplitFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/TestingFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/java/com/example/wikiapp/color_converter/ColorConverterFragment.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/build/generated/source/navigation-args/debug/com/example/wikiapp/tipcalculator/TipperFragmentArgs.kt
+/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/build/generated/source/navigation-args/debug/com/example/wikiapp/HomeFragmentArgs.kt

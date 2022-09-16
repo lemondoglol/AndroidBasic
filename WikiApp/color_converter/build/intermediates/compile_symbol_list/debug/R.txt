@@ -1,0 +1,7 @@
+int string blue_color_place_holder 0x0
+int string blue_color_place_holder_hint 0x0
+int string green_color_place_holder 0x0
+int string green_color_place_holder_hint 0x0
+int string opacity 0x0
+int string red_color_place_holder 0x0
+int string red_color_place_holder_hint 0x0

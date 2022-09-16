@@ -1,0 +1,8 @@
+com.example.color_converter
+string blue_color_place_holder
+string blue_color_place_holder_hint
+string green_color_place_holder
+string green_color_place_holder_hint
+string opacity
+string red_color_place_holder
+string red_color_place_holder_hint

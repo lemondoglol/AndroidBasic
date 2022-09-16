@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="blue_color_place_holder">Blue Color Value</string>
+    <string name="blue_color_place_holder_hint">Enter blue color value here:</string>
+    <string name="green_color_place_holder">Green Color Value</string>
+    <string name="green_color_place_holder_hint">Enter green color value here:</string>
+    <string name="opacity">Opacity</string>
+    <string name="red_color_place_holder">Red Color Value</string>
+    <string name="red_color_place_holder_hint">Enter red color value here:</string>
+</resources>

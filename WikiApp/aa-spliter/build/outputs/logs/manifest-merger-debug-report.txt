@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+		ADDED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+		ADDED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml
+		INJECTED from /Users/lemon/StudioProjects/AndroidBasic/WikiApp/aa-spliter/src/main/AndroidManifest.xml

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/WikiApp.iml" filepath="$PROJECT_DIR$/.idea/WikiApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.iml" filepath="$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/aa-spliter/WikiApp.aa-spliter.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WikiApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WikiApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WikiApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WikiApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WikiApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WikiApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WikiApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WikiApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.iml" filepath="$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/clinician_saver/WikiApp.clinician_saver.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.iml" filepath="$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/color_converter/WikiApp.color_converter.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.iml" filepath="$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tip_calculator/WikiApp.tip_calculator.unitTest.iml" />
+    </modules>
+  </component>
+</project>

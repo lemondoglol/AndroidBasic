@@ -1,0 +1,32 @@
+[
+  {
+    "name": "home_nav_graph",
+    "navigationXmlIds": [],
+    "deepLinks": [
+      {
+        "schemes": [
+          "http",
+          "https"
+        ],
+        "host": "lemon",
+        "port": -1,
+        "path": "/.*",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mFilePath": "/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml",
+            "mDescription": "home_nav_graph"
+          },
+          "mSourcePosition": {
+            "mStartLine": 26,
+            "mStartColumn": 8,
+            "mStartOffset": 1222,
+            "mEndLine": 26,
+            "mEndColumn": 47,
+            "mEndOffset": 1261
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  }
+]

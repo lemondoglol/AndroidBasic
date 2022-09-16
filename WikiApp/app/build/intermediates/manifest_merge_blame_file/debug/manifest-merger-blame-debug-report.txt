@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.wikiapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:5:5-24:19
+12        android:name="com.example.wikiapp.MyApplication"
+12-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:6:9-38
+13        android:allowBackup="true"
+13-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:7:9-35
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.7.0] /Users/lemon/.gradle/caches/transforms-3/f470866542a3e43f8e754636709bc3ef/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:10:9-54
+20        android:supportsRtl="true"
+20-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.WikiApp" >
+22-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:12:9-45
+23        <activity
+23-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:13:9-23:20
+24            android:name="com.example.wikiapp.MainActivity"
+24-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:14:13-41
+25            android:exported="true" >
+25-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:15:13-36
+26            <intent-filter>
+26-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:17:17-69
+27-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:19:17-77
+29-->/Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31            <intent-filter>
+31-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+32                <action android:name="android.intent.action.VIEW" />
+32-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+32-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+33
+34                <category android:name="android.intent.category.DEFAULT" />
+34-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+34-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+35                <category android:name="android.intent.category.BROWSABLE" />
+35-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+35-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+36
+37                <data android:scheme="http" />
+37-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+37-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+38                <data android:scheme="https" />
+38-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+38-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+39                <data android:host="lemon" />
+39-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+39-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+40                <data android:pathPrefix="/" />
+40-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+40-->[home_nav_graph] /Users/lemon/StudioProjects/AndroidBasic/WikiApp/app/src/main/res/navigation/home_nav_graph.xml:27:9-48
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->[androidx.compose.ui:ui-tooling:1.2.1] /Users/lemon/.gradle/caches/transforms-3/3ad2fa392e7ad698095376df0df6e5b9/transformed/ui-tooling-1.2.1/AndroidManifest.xml:24:9-26:39
+44            android:name="androidx.compose.ui.tooling.PreviewActivity"
+44-->[androidx.compose.ui:ui-tooling:1.2.1] /Users/lemon/.gradle/caches/transforms-3/3ad2fa392e7ad698095376df0df6e5b9/transformed/ui-tooling-1.2.1/AndroidManifest.xml:25:13-71
+45            android:exported="true" />
+45-->[androidx.compose.ui:ui-tooling:1.2.1] /Users/lemon/.gradle/caches/transforms-3/3ad2fa392e7ad698095376df0df6e5b9/transformed/ui-tooling-1.2.1/AndroidManifest.xml:26:13-36
+46
+47        <uses-library
+47-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+48            android:name="androidx.window.extensions"
+48-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+49            android:required="false" />
+49-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+50        <uses-library
+50-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+51            android:name="androidx.window.sidecar"
+51-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+52            android:required="false" />
+52-->[androidx.window:window:1.0.0] /Users/lemon/.gradle/caches/transforms-3/a8dca5d53f0d511e7e219bca21bf7140/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+56            android:authorities="com.example.wikiapp.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.0.0] /Users/lemon/.gradle/caches/transforms-3/8a52659dc56aa080884f3bf9d5d1b647/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+61            <meta-data
+61-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:30:13-32:52
+62                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+62-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:31:17-85
+63                android:value="androidx.startup" />
+63-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:32:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/lemon/.gradle/caches/transforms-3/0e52e9dd990f1e953fb2c329990eb209/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/lemon/.gradle/caches/transforms-3/0e52e9dd990f1e953fb2c329990eb209/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/lemon/.gradle/caches/transforms-3/0e52e9dd990f1e953fb2c329990eb209/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+67        </provider>
+68
+69        <receiver
+69-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:35:9-47:20
+70            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+70-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:36:13-76
+71            android:directBootAware="false"
+71-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:37:13-44
+72            android:enabled="true"
+72-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:38:13-35
+73            android:exported="true"
+73-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:39:13-36
+74            android:permission="android.permission.DUMP" >
+74-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:40:13-57
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:41:13-43:29
+76                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:17-91
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:25-88
+77            </intent-filter>
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:44:13-46:29
+79                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:17-85
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/lemon/.gradle/caches/transforms-3/88954f8b9437e005a88e6440383c9874/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:25-82
+80            </intent-filter>
+81        </receiver>
+82    </application>
+83
+84</manifest>
