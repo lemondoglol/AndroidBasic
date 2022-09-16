@@ -59,7 +59,8 @@ class HomeFragment : Fragment() {
             Testing()
 
             Button(onClick = {
-                findNavController().navigate(R.id.tipperFragment)
+                val action = HomeFragmentDirections.actionHomeFragmentToTipperFragment(tipPercentage = 20)
+                findNavController().navigate(action)
             }) {
                 Text(text = stringResource(R.string.tip_calculator))
             }

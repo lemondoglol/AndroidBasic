@@ -29,7 +29,12 @@
     <fragment
         android:id="@+id/tipperFragment"
         android:name="com.example.wikiapp.tipcalculator.TipperFragment"
-        android:label="TipperFragment" />
+        android:label="TipperFragment" >
+        <argument android:name="tipPercentage"
+            app:argType="integer"
+            android:defaultValue="15"/>
+    </fragment>
+
     <fragment
         android:id="@+id/AASplitFragment"
         android:name="com.example.wikiapp.aasplit.AASplitFragment"
