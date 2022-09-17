@@ -14,76 +14,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cfe54da-7a82-489d-8172-c9091bfec282" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Android-DeepLink-Example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/androidTest/java/com/example/delegation/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/java/com/example/delegation/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/java/com/example/delegation/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/java/com/example/delegation/ui/theme/Shape.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/java/com/example/delegation/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/java/com/example/delegation/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/app/src/test/java/com/example/delegation/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Delegation/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.." beforeDir="false" afterPath="$PROJECT_DIR$/.." afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-spliter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/aa-spliter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/clinician_saver/ClinicianSaverFragmentViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/tipcalculator/TipperFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wikiapp/tipcalculator/TipperFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/home_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/home_nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinician_saver/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/clinician_saver/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/color_converter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/color_converter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tip_calculator/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tip_calculator/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ExamplesWithCompose" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamplesWithCompose" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WikiBox/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WikiBox/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WikiBox/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WikiBox/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WikiBox/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WikiBox/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android-spannable-list-sample" beforeDir="false" afterPath="$PROJECT_DIR$/../../android-spannable-list-sample" afterDir="false" />
-    </list>
+    <list default="true" id="4cfe54da-7a82-489d-8172-c9091bfec282" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
